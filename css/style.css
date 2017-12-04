@@ -77,6 +77,12 @@ body {
 .a_center {
     text-align: center;
 }
+.a_left {
+    text-align: left;
+}
+.a_right {
+    text-align: right;
+}
 .d_block {
     display: block;
 }
@@ -103,11 +109,11 @@ header {
     font-size: 0;
 
 }
-.left_btn, .right_btn {
+.btn_left, .btn_right {
     width: 25%;
     color: #fff;
 }
-.left_btn {
+.btn_left {
     font-size: 50px;
 }
 .logo {
@@ -120,7 +126,7 @@ header {
     padding: 25px;
 }
 .back_btn:hover {
-    color: #000;
+    color: #132b4c;
     background-color: rgba(255,255,255,1);
 }
 .intro p {
@@ -139,9 +145,69 @@ header {
     color: #fff;
     width: 100%;
     background-color: rgba(255,255,255,.3);
-
 }
 .select_btn:hover {
-    color: #000;
+    color: #132b4c;
     background-color: rgba(255,255,255,1);
+}
+
+.form_account input {
+    color: #fff;
+    width: 100%;
+    padding: 35px;
+    border: 0;
+    border-radius: 15px;
+    margin: 10px 0;
+    font-size: 24px;
+    background-color: rgba(255,255,255,.3);
+}
+.form_account input:focus {
+    color: #132b4c;
+    background-color: rgba(255,255,255,.7);
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #132b4c;
+}
+input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: #132b4c;
+}
+input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: #132b4c;
+}
+input:focus:-moz-placeholder { /* Firefox 18- */
+  color: #132b4c;
+}
+
+.form_account button {
+    color: #132b4c;
+    width: 100%;
+    padding: 35px;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-size: 24px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.form_account button:hover {
+    background-color: #132b4c;
+    color: #fff;
+}
+.invisible {
+    color: transparent;
+    background-color: transparent;
+    border: 0;
 }
