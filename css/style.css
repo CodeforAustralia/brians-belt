@@ -15,6 +15,7 @@ html {
 *:after {
     box-sizing: inherit;
     transition: .4s all;
+      outline: none;
 }
 .clearfix:after {
     font-size: 0;
