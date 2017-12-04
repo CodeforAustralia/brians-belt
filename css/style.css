@@ -10,16 +10,18 @@
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     transition: .4s all;
 }
 .clearfix:after {
-    height: 0;
+    font-size: 0;
     display: block;
     visibility: hidden;
     clear: both;
-    font-size: 0;
+    height: 0;
     content: ' ';
 }
 * html .clearfix {
@@ -29,28 +31,123 @@ html {
     zoom: 1;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     font: inherit;
     font-size: 100%;
+    margin: 0;
+    padding: 0;
     vertical-align: baseline;
     border: 0;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 body {
     line-height: 1;
 }
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -89,27 +186,30 @@ body {
 .d_inline_block {
     display: inline-block;
 }
+.lr_25px {
+    padding: 0 25px;
+}
 .wrapper {
-    padding: 25px;
-    min-height: 100vh;
-    height: 100%;
     width: 100%;
     max-width: 800px;
+    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
+    padding: 25px 0;
     background: #00a5ee;
-    background: -moz-linear-gradient(top,  #00a5ee 0%, #0677c9 50%, #0c4da7 100%);
+    background:    -moz-linear-gradient(top,  #00a5ee 0%, #0677c9 50%, #0c4da7 100%);
     background: -webkit-linear-gradient(top,  #00a5ee 0%,#0677c9 50%,#0c4da7 100%);
-    background: linear-gradient(to bottom,  #00a5ee 0%,#0677c9 50%,#0c4da7 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a5ee', endColorstr='#0c4da7',GradientType=0 );
+    background:         linear-gradient(to bottom,  #00a5ee 0%,#0677c9 50%,#0c4da7 100%);
 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a5ee', endColorstr='#0c4da7',GradientType=0 );
 }
 
 header {
-    width: 100%;
     font-size: 0;
-
+    width: 100%;
 }
-.btn_left, .btn_right {
+.btn_left,
+.btn_right {
     width: 25%;
     color: #fff;
 }
@@ -120,30 +220,38 @@ header {
     width: 50%;
     text-align: center;
 }
+.logo img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
 .back_btn {
+    padding: 25px;
     text-decoration: none;
     color: #fff;
-    padding: 25px;
 }
 .back_btn:hover {
     color: #132b4c;
     background-color: rgba(255,255,255,1);
 }
+.intro {
+    padding: 0 25px;
+}
 .intro p {
-    font-size: 3em;
+    font-size: 1.5em;
     line-height: 1.25em;
-    color: #fff;
-    padding: 75px 0;
     margin: 0 auto;
+    padding: 35px 0 50px;
+    color: #fff;
 }
 .select_btn {
-    font-size: 3.5em;
+    font-size: 1.5em;
     line-height: 1.25em;
-    padding: 50px;
+    width: 100%;
     margin: 25px 0;
+    padding: 50px;
     text-decoration: none;
     color: #fff;
-    width: 100%;
     background-color: rgba(255,255,255,.3);
 }
 .select_btn:hover {
@@ -152,65 +260,72 @@ header {
 }
 
 .form_account input {
-    color: #fff;
+    font-size: 1.125em;
     width: 100%;
-    padding: 35px;
+    margin: 10px 0;
+    padding: 25px;
+    color: #fff;
     border: 0;
     border-radius: 15px;
-    margin: 10px 0;
-    font-size: 24px;
     background-color: rgba(255,255,255,.3);
 }
 .form_account input:focus {
     color: #132b4c;
     background-color: rgba(255,255,255,.7);
 }
-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #fff;
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
 }
-input::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
 }
-input:-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
 }
-input:-moz-placeholder { /* Firefox 18- */
-  color: #fff;
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
 }
-input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #132b4c;
+input:focus::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #132b4c;
 }
-input:focus::-moz-placeholder { /* Firefox 19+ */
-  color: #132b4c;
+input:focus::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #132b4c;
 }
-input:focus:-ms-input-placeholder { /* IE 10+ */
-  color: #132b4c;
+input:focus:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #132b4c;
 }
-input:focus:-moz-placeholder { /* Firefox 18- */
-  color: #132b4c;
+input:focus:-moz-placeholder {
+    /* Firefox 18- */
+    color: #132b4c;
 }
 
 .form_account button {
-    color: #132b4c;
+    font-size: 1.125em;
+    font-weight: bold;
     width: 100%;
-    padding: 35px;
+    margin-top: 10px;
+    padding: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #132b4c;
     border: 0;
     border-radius: 15px;
-    font-size: 24px;
     background-color: #fff;
-    cursor: pointer;
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-
 }
 .form_account button:hover {
-    background-color: #132b4c;
     color: #fff;
+    background-color: #132b4c;
 }
 .invisible {
-    color: transparent;
-    background-color: transparent;
-    border: 0;
     margin: 25px 0 0;
+    color: transparent;
+    border: 0;
+    background-color: transparent;
 }
