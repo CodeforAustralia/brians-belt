@@ -223,15 +223,15 @@ header {
 }
 .logo img {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
 }
-.back_btn {
-    padding: 25px;
+.btn_back {
+    padding: 15px 25px;
     text-decoration: none;
     color: #fff;
 }
-.back_btn:hover {
+.btn_back:hover {
     color: #132b4c;
     background-color: rgba(255,255,255,1);
 }
@@ -245,17 +245,17 @@ header {
     padding: 35px 0 50px;
     color: #fff;
 }
-.select_btn {
+.btn_select {
     font-size: 1.5em;
     line-height: 1.25em;
     width: 100%;
     margin: 25px 0;
-    padding: 50px;
+    padding: 25px;
     text-decoration: none;
     color: #fff;
     background-color: rgba(255,255,255,.3);
 }
-.select_btn:hover {
+.btn_select:hover {
     color: #132b4c;
     background-color: rgba(255,255,255,1);
 }
