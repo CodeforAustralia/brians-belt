@@ -30,3 +30,9 @@ sftp-config.json
 
 # Project stuff
 img/*
+vendor/*
+.sublime-workspace
+
+# Authentication files #
+########################
+authentication.php
