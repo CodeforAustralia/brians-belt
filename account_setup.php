@@ -44,8 +44,8 @@ include("header.php");
 				 }
 				 ?>">
 					<hr class="invisible" />
-					<input type="password" placeholder="Password" name="password" value="abc">
-					<input type="password" placeholder="Confirm Password" name="password_verify" value="abc">
+					<input type="password" placeholder="Password" name="password">
+					<input type="password" placeholder="Confirm Password" name="password_verify">
 					<hr class="invisible" />
 					<button type="submit" class="a_left">Continue</button>
 				</form>
