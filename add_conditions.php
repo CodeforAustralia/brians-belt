@@ -18,7 +18,7 @@ foreach ($_POST as $key => $value) {
 			</header>
 
 			<div class="intro a_center">
-				<p><strong>Court Order</strong><br />Let's add your conditions</p>
+				<p><strong>Order</strong><br />Let's add your conditions</p>
 			</div>
 			<div class="content conditions">
 				<form action="order_length.php" class="form_account" method="post">

@@ -20,7 +20,7 @@ foreach ($response->body as $support) {
 		<div class="wrapper">
 			<header class="table logged_in">
 				
-				<a href="javascript:history.go(-1)" class="btn_left btn_back table_cell v_middle">
+				<a href="home.php" class="btn_left btn_back table_cell v_middle">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="3 -1.999 7.4 12" xml:space="preserve">
 					<g id="Symbols">
 						<g transform="translate(-102.000000, -19.000000)">
@@ -39,7 +39,7 @@ foreach ($response->body as $support) {
 				<div class="circle_outer d_flex">
 					<div class="circle_middle d_flex">
 						<div class="circle_inner d_flex">
-							<h1>A</h1>
+							<h1><?php echo substr($supp_name, 0, 1); ?></h1>
 						</div>
 					</div>
 				</div>

@@ -8,27 +8,22 @@
 **************************************/
 
 html {
+    overflow-y: scroll;
     box-sizing: border-box;
-  overflow-y: scroll;
 }
 *,
 *:before,
 *:after {
     box-sizing: inherit;
-
-    transition: .4s all;
-
+    /*transition: .4s all;*/
     outline: none;
 }
 .clearfix:after {
     font-size: 0;
-
     display: block;
     visibility: hidden;
     clear: both;
-
     height: 0;
-
     content: ' ';
 }
 * html .clearfix {
@@ -121,12 +116,9 @@ audio,
 video {
     font: inherit;
     font-size: 100%;
-
     margin: 0;
     padding: 0;
-
     vertical-align: baseline;
-
     border: 0;
 }
 /* HTML5 display-role reset for older browsers */
@@ -205,7 +197,6 @@ body {
     height: 100%;
     min-height: 100vh;
     margin: 0 auto;
-
     background: #00a5ee;
     background:    -moz-linear-gradient(top,  #00a5ee 0%, #0677c9 50%, #0c4da7 100%);
     background: -webkit-linear-gradient(top,  #00a5ee 0%,#0677c9 50%,#0c4da7 100%);
@@ -216,29 +207,26 @@ body {
 
 header {
     font-size: 0;
-
     width: 100%;
     padding: 25px 0;
 }
 .btn_left,
 .btn_right {
     width: 25%;
-
     color: #fff;
 }
 .btn_left {
     font-size: 50px;
 }
 .btn_back svg {
-    height: 35px;
     width: auto;
+    height: 35px;
 }
 a.btn_back:hover #btn_back {
     fill: #132b4c;
 }
 .logo {
     width: 50%;
-
     text-align: center;
 }
 .logo img {
@@ -248,22 +236,19 @@ a.btn_back:hover #btn_back {
 }
 .btn_back {
     padding: 15px 25px;
-
     text-decoration: none;
-
     color: #fff;
 }
-a.btn_back:hover, .btn_edit:hover {
+a.btn_back:hover,
+.btn_edit:hover {
     color: #132b4c;
     background-color: rgba(255,255,255,1);
 }
 .btn_edit {
-    padding: 15px 25px;
-
-    text-decoration: none;
-
-    color: #c3e1f3;
     font-size: 18px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #c3e1f3;
 }
 .intro {
     padding: 25px 25px 25px;
@@ -271,21 +256,16 @@ a.btn_back:hover, .btn_edit:hover {
 .intro p {
     font-size: 1.5em;
     line-height: 1.25em;
-
     margin: 0 auto;
-
     color: #fff;
 }
 .btn_select {
     font-size: 1.5em;
     line-height: 1.25em;
-
     width: 100%;
     margin: 25px 0;
     padding: 25px;
-
     text-decoration: none;
-
     color: #fff;
     background-color: rgba(255,255,255,.3);
 }
@@ -296,12 +276,11 @@ a.btn_back:hover, .btn_edit:hover {
 
 .edit .form_account input {
     background-color: #a5cde4;
-
 }
 .date {
-    background-color: #fff;
-    padding: 25px;
     margin-bottom: 25px;
+    padding: 25px;
+    background-color: #fff;
 }
 .edit .d_flex input {
     margin-right: 25px;
@@ -312,19 +291,15 @@ a.btn_back:hover, .btn_edit:hover {
 .edit .content h4 {
     font-size: 1.25em;
     font-weight: bold;
-
     margin-bottom: 15px;
-
     text-align: center;
     text-transform: uppercase;
 }
 .form_account input {
     font-size: 1.125em;
-
     width: 100%;
     margin: 10px 0;
     padding: 25px;
-
     /*color: #fff;*/
     border: 0;
     border-radius: 15px;
@@ -405,29 +380,27 @@ input:focus:-moz-placeholder {
     color: #132b4c;
 }
 
-.form_account button, input.submit {
+.form_account button,
+input.submit {
     font-size: 1.125em;
     font-weight: bold;
-
     width: 100%;
     margin-top: 10px;
     padding: 25px;
-
     cursor: pointer;
     text-transform: uppercase;
-
     color: #132b4c;
     border: 0;
     border-radius: 15px;
     background-color: #fff;
 }
-.form_account button:hover, input.submit:hover {
+.form_account button:hover,
+input.submit:hover {
     color: #fff;
     background-color: #132b4c;
 }
 .invisible {
     margin: 25px 0 0;
-
     color: transparent;
     border: 0;
     background-color: transparent;
@@ -436,13 +409,11 @@ input:focus:-moz-placeholder {
 .conditions {
     /*height: 100vh;*/
     padding: 25px;
-
     background-color: #f5f5f5;
 }
 .mandatory > div {
     margin-bottom: 25px;
     padding: 25px;
-
     background-color: #fff;
 }
 .mandatory h3 {
@@ -459,18 +430,16 @@ h3 {
 .mandatory p {
     font-size: 1.25em;
 }
-.btn_next, button.btn_next {
+.btn_next,
+button.btn_next {
     font-size: 1.125em;
     font-weight: bold;
-
     width: 100%;
     margin-top: 10px;
     padding: 25px;
-
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-
     color: #fff;
     border: 0;
     border-radius: 15px;
@@ -491,16 +460,14 @@ strong {
 .conditions_wrapper {
     margin-bottom: 25px;
     padding: 25px;
-
     background-color: #fff;
 }
 .condition_title {
     width: 75%;
 }
 .condition_toggle {
-    width: 25%;
     position: relative;
-
+    width: 25%;
     text-align: right;
 }
 .condition_details {
@@ -509,11 +476,9 @@ strong {
 .condition_details textarea {
     font-family: sans-serif;
     font-size: 1.25em;
-
     width: 100%;
     min-height: 100px;
     padding: 15px;
-
     border-radius: 15px;
 }
 .condition_details textarea:focus {
@@ -525,17 +490,13 @@ strong {
 }
 .condition_toggle input.mobileToggle {
     position: absolute;
-
     opacity: 0;
 }
 .condition_toggle input.mobileToggle + label {
     position: relative;
-
     display: inline-block;
-
     width: 50px;
     height: 30px;
-
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -543,7 +504,6 @@ strong {
             user-select: none;
     -webkit-transition: .4s ease;
             transition: .4s ease;
-
     border: 1px solid #e4e4e4;
     border-radius: 60px;
 }
@@ -551,32 +511,24 @@ strong {
     position: absolute;
     top: 0;
     left: 0;
-
     display: block;
-
     width: 51px;
     height: 30px;
-
     content: '';
     -webkit-transition: .2s cubic-bezier(.24, 0, .5, 1);
             transition: .2s cubic-bezier(.24, 0, .5, 1);
-
     border-radius: 30px;
 }
 .condition_toggle input.mobileToggle + label:after {
     position: absolute;
     top: 1px;
     left: 0;
-
     display: block;
-
     width: 28px;
     height: 28px;
-
     content: '';
     -webkit-transition: .35s cubic-bezier(.54, 1.6, .5, 1);
             transition: .35s cubic-bezier(.54, 1.6, .5, 1);
-
     border-radius: 60px;
     background: whitesmoke;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 4px 0 0 rgba(0, 0, 0, .04), 0 4px 9px rgba(0, 0, 0, .13), 0 3px 3px rgba(0, 0, 0, .05);
@@ -584,7 +536,6 @@ strong {
 .condition_toggle input.mobileToggle:checked + label:before {
     -webkit-transition: width .2s cubic-bezier(0, 0, 0, .1);
             transition: width .2s cubic-bezier(0, 0, 0, .1);
-
     background: #2ecc71;
 }
 .condition_toggle input.mobileToggle:checked + label:after {
@@ -593,18 +544,14 @@ strong {
 
 .order .d_flex input {
     margin-right: 25px;
-
     text-align: center;
 }
 .order h4 {
     font-size: 1.25em;
     font-weight: bold;
-
     margin-bottom: 15px;
-
     text-align: center;
     text-transform: uppercase;
-
     color: #fff;
 }
 .order .invisible {
@@ -617,7 +564,6 @@ sub {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-
     border-radius: 50%;
 }
 .icon img {
@@ -638,15 +584,11 @@ sub {
 }
 .home a {
     font-size: 1.5em;
-
     display: inline-block;
     float: left;
-
     width: 50%;
     padding: 25px 0 0;
-
     text-decoration: none;
-
     color: #fff;
 }
 .home a:hover {
@@ -657,16 +599,13 @@ sub {
 }
 .logged_in {
     padding: 0;
-
     background-color: rgba(255, 255, 255, .1);
 }
 .circle_inner {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-
     text-align: center;
-
     border-radius: 50%;
     background-color: #fff;
 }
@@ -674,9 +613,7 @@ sub {
     width: 215px;
     height: 215px;
     margin: 0 auto;
-
     text-align: center;
-
     border-radius: 50%;
     background-color: #0294e0;
 }
@@ -684,65 +621,53 @@ sub {
     width: 230px;
     height: 230px;
     margin: 0 auto;
-
     text-align: center;
-
     border-radius: 50%;
     background-color: #a5cde4;
 }
 h1 {
     font-size: 100px;
-
     display: block;
-
     margin: 0 auto;
-
     color: #50ace3;
 }
 .intro h3 {
     margin: 25px 0 10px;
-
     color: #fff;
 }
 .intro h4 {
     font-size: 20px;
-
     color: #a5cde4;
 }
-.support h4, .profile h4 {
+.support h4,
+.profile h4 {
     font-size: 20px;
-
     text-transform: uppercase;
-
     color: grey;
 }
 .support_detail p {
     font-size: 24px;
-
     margin: 25px 0 50px;
+
+    overflow-wrap: break-word;
 }
 header h4 {
     font-size: 24px;
-
     display: block;
-
     color: #fff;
 }
 .profile {
     padding: 25px;
-
     background-color: #fff;
 }
 .support_toolbar {
-
     text-align: center;
 }
 .support_toolbar a {
-    padding: 25px;
     display: inline-block;
+    padding: 25px;
 }
 .support_toolbar a:hover {
-
     background-color: rgba(255,255,255,.3);
 }
 .icon_support {
@@ -751,17 +676,16 @@ header h4 {
     margin: 0 25px;
 }
 .icon_profile {
-    margin: 0 25px 0 15px;
-
-    border-radius: 50%;
-    background-color: #eaeaea;
     width: 75px;
     height: 75px;
+    margin: 0 25px 0 15px;
+    border-radius: 50%;
+    background-color: #eaeaea;
 }
 .icon_profile img {
-    padding: 10px;
     width: 100%;
     height: auto;
+    padding: 10px;
 }
 .profile h4 {
     padding: 15px 0;
@@ -774,7 +698,6 @@ header h4 {
 }
 .profile a {
     text-decoration: none;
-
     color: #000;
 }
 .profile a:hover {
@@ -785,7 +708,6 @@ header h4 {
 }
 .support_detail {
     padding: 25px;
-
     background-color: #fff;
 }
 .profile hr {
@@ -794,9 +716,7 @@ header h4 {
 .order a {
     margin-bottom: 15px;
     padding: 15px;
-
     text-decoration: none;
-
     background-color: rgba(255,255,255,.3);
 }
 .order a:hover {
@@ -804,7 +724,6 @@ header h4 {
 }
 .order h3 {
     font-weight: normal;
-
     margin: 0 auto;
 
     /*text-align: center;*/
@@ -813,9 +732,7 @@ header h4 {
     height: 145px;
     margin-bottom: 15px;
     padding: 15px;
-
     text-decoration: none;
-
     background-color: rgba(255,255,255,.1);
 
     justify-content: center;
@@ -825,7 +742,6 @@ header h4 {
     height: 115px;
     margin-right: 15px;
     padding: 20px;
-
     border-radius: 50%;
     background-color: #0294e0;
 }
@@ -834,49 +750,43 @@ header h4 {
     height: auto;
 }
 .order .d_flex .icon_order {
+    min-width: 115px;
+    max-width: 115px;
 
-  min-width: 115px;
-  max-width: 115px;
-  flex-basis: auto; /* default value */
-  flex-grow: 1;
+    flex-basis: auto; /* default value */
+    flex-grow: 1;
 }
 .order h3 {
     line-height: 1.35em;
-
     margin: 0;
 }
-.order h2, .condition h2 {
+.order h2,
+.condition h2 {
     font-size: 30px;
-
     margin: 15px 0 50px;
-
     color: #fff;
 }
 .terms h2 {
-    margin: 25px 0;
     font-size: 30px;
+    margin: 25px 0;
 }
 .edit h2 {
     font-size: 30px;
-
     margin: 15px 0;
-
     color: #fff;
 }
 .videos h2 {
     font-size: 30px;
-
     margin: 0 0 50px;
-
     color: #fff;
 }
 .videos h3 {
     margin: 0 0 25px 0;
 }
 .videos > div {
-    background-color: rgba(255,255,255,.3);
-    padding: 25px;
     margin-bottom: 25px;
+    padding: 25px;
+    background-color: rgba(255,255,255,.3);
 }
 .intro {
     color: #fff;
@@ -887,9 +797,9 @@ header h4 {
 }
 .video_wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
     height: 0;
+    padding-top: 25px;
+    padding-bottom: 56.25%; /* 16:9 */
 }
 .video_wrapper iframe {
     position: absolute;
@@ -899,17 +809,17 @@ header h4 {
     height: 100%;
 }
 div.error {
-    background-color: orange;
-    padding: 25px;
-    margin-bottom: 25px;
-    color: #fff;
-    text-align: center;
     height: initial;
+    margin-bottom: 25px;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    background-color: orange;
 }
 .notice {
-    background-color: orange;
-    padding: 25px;
     margin-bottom: 25px;
+    padding: 25px;
+    background-color: orange;
 }
 .notice p {
     font-size: 22px;
@@ -924,17 +834,14 @@ div.error {
     padding: 25px;
 }
 .condition .content {
-    background-color: #fff;
     padding: 25px;
+    background-color: #fff;
 }
 .condition .content h4 {
-    margin-bottom: 15px;
     font-size: 20px;
-
+    margin-bottom: 15px;
     text-transform: uppercase;
-
     color: grey;
-
 }
 .condition .content p {
     font-size: 18px;
@@ -945,14 +852,14 @@ div.error {
     text-align: center;
 }
 .forgot a {
-    text-decoration: none;
-    color: #fff;
     font-size: 20px;
+    font-style: italic;
+    display: inline-block;
     margin-top: 25px;
     padding: 15px;
-    display: inline-block;
+    text-decoration: none;
+    color: #fff;
     border-bottom: 1px solid #fff;
-    font-style: italic;
 }
 .forgot a:hover {
     background-color: rgba(255,255,255,.3);
@@ -965,6 +872,17 @@ div.error {
     header {
         padding: 15px 0 0;
     }
+    .support_toolbar a {
+        display: inline-block;
+        float: left;
+        width: 50%;
+        padding: 25px;
+    }
+    .icon_support {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
 }
 @media (max-width: 400px) {
     .icon {
@@ -974,7 +892,6 @@ div.error {
 
     .home a {
         display: block;
-
         width: 100%;
     }
 }

@@ -11,7 +11,7 @@ if(isset($_SESSION['login_user'])){
 		<div class="wrapper">
 			<header class="table">
 				
-				<a href="javascript:history.go(-1)" class="btn_left btn_back table_cell v_middle">
+				<a href="index.php" class="btn_left btn_back table_cell v_middle">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="3 -1.999 7.4 12" xml:space="preserve">
 					<g id="Symbols">
 						<g transform="translate(-102.000000, -19.000000)">

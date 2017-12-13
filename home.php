@@ -21,7 +21,7 @@ include('session_user.php');
 			<div class="content home a_center">
 				<div class="clearfix">
 					<a href="profile.php">
-						<div class="icon c_orange d_flex"><img src="img/profile.svg" alt=""></div>
+						<div class="icon c_orange d_flex"><img src="img/profile_w.svg" alt=""></div>
 						<p>My Profile</p>
 					</a>
 					<a href="order.php">

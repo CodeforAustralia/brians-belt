@@ -7,7 +7,7 @@ include('session_user.php');
 		<div class="wrapper">
 			<header class="table logged_in">
 				
-				<a href="javascript:history.go(-1)" class="btn_left btn_back table_cell v_middle">
+				<a href="home.php" class="btn_left btn_back table_cell v_middle">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="3 -1.999 7.4 12" xml:space="preserve">
 					<g id="Symbols">
 						<g transform="translate(-102.000000, -19.000000)">
@@ -24,7 +24,7 @@ include('session_user.php');
 				<div class="circle_outer d_flex">
 					<div class="circle_middle d_flex">
 						<div class="circle_inner d_flex">
-							<h1>J</h1>
+							<h1><?php echo substr($name, 0, 1); ?></h1>
 						</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@ include('session_user.php');
 					</div><h3>Change name</h3>
 				</a>
 				<hr />
-				<a class="d_flex" href="profile_edit_password.php#">
+				<a class="d_flex" href="profile_edit_password.php">
 					<div class="icon_profile">
 						<img src="img/Lock.svg" />
 					</div><h3>Change password</h3>
