@@ -1,5 +1,6 @@
 {
     "require": {
-        "nategood/httpful": "*"
+        "nategood/httpful": "*",
+        "mashape/unirest-php": "^3.0"
     }
 }

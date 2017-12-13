@@ -1,35 +1,21 @@
 <div>
-	<h3>Do not commit an offense you could be imprisoned for</h3>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis quam felis, ac efficitur arcu sollicitudin et. Integer sed eros eu erat auctor posuere eget ac lorem. Duis placerat scelerisque velit. Duis eget turpis non urna varius blandit sit amet non orci.</p>
+	<h3>Not commit a further offence</h3>
 </div>
 <div>
-	<h3>Follow all conditions and requirements given to you</h3>
-	<hr>
-	<p>You must comply with any obligation or requirement prescribed by the regulations. The regulations contain further conditions such as prohibitions on being under the influence of alcohol or drugs while attending at a community corrections office or while performing community service under a CCO.</p>
+	<h3>Comply with any obligation or requirement prescribed by regulation 17 of the Sentencing Regulations 2011</h3>
 </div>
 <div>
-	<h3>Report to and receive visits from the Secretary (or Delegate)</h3>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis quam felis, ac efficitur arcu sollicitudin et. Integer sed eros eu erat auctor posuere eget ac lorem. Duis placerat scelerisque velit. Duis eget turpis non urna varius blandit sit amet non orci.</p>
+	<h3>Report within 2 business days of commencing the order </h3>
 </div>
 <div>
-	<h3>Report to and receive visits from the Secretary (or Delegate)</h3>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis quam felis, ac efficitur arcu sollicitudin et. Integer sed eros eu erat auctor posuere eget ac lorem. Duis placerat scelerisque velit. Duis eget turpis non urna varius blandit sit amet non orci.</p>
+	<h3>Attend regular and ongoing supervision appointments as required</h3>
 </div>
 <div>
-	<h3>Report to and receive visits from the Secretary (or Delegate)</h3>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis quam felis, ac efficitur arcu sollicitudin et. Integer sed eros eu erat auctor posuere eget ac lorem. Duis placerat scelerisque velit. Duis eget turpis non urna varius blandit sit amet non orci.</p>
+	<h3>Notify any change of address or employment within 2 business days</h3>
 </div>
 <div>
-	<h3>Report to and receive visits from the Secretary (or Delegate)</h3>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis quam felis, ac efficitur arcu sollicitudin et. Integer sed eros eu erat auctor posuere eget ac lorem. Duis placerat scelerisque velit. Duis eget turpis non urna varius blandit sit amet non orci.</p>
+	<h3>Not leave the State of Victoria without the permission of your Case Manager</h3>
 </div>
 <div>
-	<h3>Report to and receive visits from the Secretary (or Delegate)</h3>
-	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis quam felis, ac efficitur arcu sollicitudin et. Integer sed eros eu erat auctor posuere eget ac lorem. Duis placerat scelerisque velit. Duis eget turpis non urna varius blandit sit amet non orci.</p>
+	<h3>Obey all lawful instructions and directions from your Case Manager which may be written or verbal</h3>
 </div>

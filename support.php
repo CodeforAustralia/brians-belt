@@ -1,6 +1,22 @@
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+include('session_user.php');
 
-	
+$headers = array('Content-Type' => 'application/json', 'Authorization' => getAuthorization());
+$response = Unirest\Request::get('http://ec2-54-66-246-123.ap-southeast-2.compute.amazonaws.com/brian/src/public/client/' . $JAID . '/support', $headers);
+
+if($response->body == NULL)
+	header('Location: support_edit.php'); 
+
+foreach ($response->body as $support) {
+
+	$supp_name = $support->Name;
+	$supp_email = $support->email;
+	$supp_phone = $support->Phone;
+	$supp_location = $support->Location;
+
+} ?>
+
 		<div class="wrapper">
 			<header class="table logged_in">
 				<a href="javascript:history.go(-1)" class="btn_left btn_back table_cell v_middle">
@@ -20,24 +36,24 @@
 						</div>
 					</div>
 				</div>
-				<h3>Angela Clarke</h3>
-				<h4>ccsbendigo@justice.vic.gov.au</h4>
+				<h3><?php echo $supp_name; ?></h3>
+				<h4><?php echo $supp_email; ?></h4>
 			</div>
 			<div class="content support">
 				<div class="support_toolbar">
-					<a href="#"><img src="img/phone.svg" class="icon_support" /></a>
-					<a href="#"><img src="img/email.svg" class="icon_support" /></a>
+					<a href="tel:<?php echo $supp_phone; ?>"><img src="img/phone.svg" class="icon_support" /></a>
+					<a href="mailto:<?php echo $supp_email; ?>"><img src="img/email.svg" class="icon_support" /></a>
 				</div>
 				<div class="support_detail">
 					<h4>Phone</h4>
 					<hr />
-					<p>03 9885 9621</p>
+					<p><?php echo $supp_phone; ?></p>
 					<h4>Location</h4>
 					<hr />
-					<p>CCS Bendigo</p>
+					<p><?php echo $supp_location; ?></p>
 					<h4>Email</h4>
 					<hr />
-					<p>ccsbendigo@justice.vic.gov.au</p>
+					<p><?php echo $supp_email; ?></p>
 				</div>
 			</div>
 		</div>

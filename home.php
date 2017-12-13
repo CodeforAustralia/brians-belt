@@ -1,5 +1,7 @@
-<?php include("header.php"); ?>
-
+<?php
+include("header.php");
+include('session_user.php');
+?>
 	
 		<div class="wrapper">
 			<header class="table">
@@ -17,7 +19,7 @@
 				<sub>H. Jackson Brown, JR.</sub>
 			</div>
 			<div class="content lr_25px home a_center">
-				<div class="">
+				<div class="clearfix">
 					<a href="profile.php">
 						<div class="icon c_orange d_flex"><img src="img/profile.svg" alt=""></div>
 						<p>My Profile</p>
@@ -27,7 +29,7 @@
 						<p>My Order</p>
 					</a>
 				</div>
-				<div class="">
+				<div class="clearfix">
 					<a href="resources.php">
 						<div class="icon c_purple d_flex"><img src="img/resources.svg" alt=""></div>
 						<p>Resources</p>

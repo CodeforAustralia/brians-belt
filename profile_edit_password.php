@@ -1,5 +1,7 @@
-<?php include("header.php"); ?>
-
+<?php
+include("header.php");
+include('session_user.php');
+?>
 	
 		<div class="wrapper edit">
 			<header class="table logged_in">

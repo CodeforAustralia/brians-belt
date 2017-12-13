@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+include('session_user.php');
+?>
 
 	
 		<div class="wrapper">
@@ -21,24 +24,23 @@
 				
 				<hr class="invisible" />
 				<h2>Your Conditions</h2>
-				<a class="d_flex" href="unpaid_community_work.php">
-					<div class="icon_order"><img src="img/icon-conditions-community-work.svg" /></div><h3>Unpaid Commmunity Work</h3>
-				</a>
-				<a class="d_flex" href="unpaid_community_work.php">
-					<div class="icon_order"><img src="img/icon-conditions-community-work.svg" /></div><h3>Unpaid Commmunity Work</h3>
-				</a>
-				<a class="d_flex" href="unpaid_community_work.php">
-					<div class="icon_order"><img src="img/icon-conditions-community-work.svg" /></div><h3>Unpaid Commmunity Work</h3>
-				</a>
-				<a class="d_flex" href="unpaid_community_work.php">
-					<div class="icon_order"><img src="img/icon-conditions-community-work.svg" /></div><h3>Unpaid Commmunity Work</h3>
-				</a>
-				<a class="d_flex" href="unpaid_community_work.php">
-					<div class="icon_order"><img src="img/icon-conditions-community-work.svg" /></div><h3>Unpaid Commmunity Work</h3>
-				</a>
-				<a class="d_flex" href="unpaid_community_work.php">
-					<div class="icon_order"><img src="img/icon-conditions-community-work.svg" /></div><h3>Unpaid Commmunity Work</h3>
-				</a>
+				<?php
+
+				$headers = array('Content-Type' => 'application/json', 'Authorization' => getAuthorization());
+				$response = Unirest\Request::get('http://ec2-54-66-246-123.ap-southeast-2.compute.amazonaws.com/brian/src/public/client/' . $JAID . '/condition/order/' . $order_ID, $headers);
+
+				foreach ($response->body as $condition) {
+					if($condition->ConditionStatus == '1') {
+					?>
+
+					<a class="d_flex" href="<?php echo $condition->ConditionSlug; ?>.php">
+						<div class="icon_order"><img src="img/<?php echo $condition->Image; ?>" /></div><h3><?php echo $condition->ConditionName; ?></h3>
+					</a>
+
+					<?php 
+					}
+				} ?>
+				
 			</div>
 		</div>
 <?php include("footer.php"); ?>

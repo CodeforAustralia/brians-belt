@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+include('session_user.php');
+?>
 
 	
 		<div class="wrapper edit">
@@ -32,27 +35,22 @@
 					</div>
 				
 				<?php
-				$uri = 'http://ec2-54-66-246-123.ap-southeast-2.compute.amazonaws.com/brian/src/public/client/111/condition/order/1';
 
-				$response = \Httpful\Request::get($uri)
-				->addHeader('Content-Type', 'application/json')
-				->addHeader('Authorization', 'Basic Tnl5anJjY1FlQkY0Z0o4cDo/dXI1SEZmRSZyKlZfJFghUDUtUzNUSi1jYnU/Uk5mKw==')
-				->send();
+				$headers = array('Content-Type' => 'application/json', 'Authorization' => getAuthorization());
+				$response = Unirest\Request::get('http://ec2-54-66-246-123.ap-southeast-2.compute.amazonaws.com/brian/src/public/client/' . $JAID . '/condition/order/' . $order_ID, $headers);
 
-				$json = json_decode($response);
-
-				foreach ($json as $condition) {
+				foreach ($response->body as $condition) {
 				?>
 				<div class="conditions_wrapper">
 					<div class="d_flex">
 						<div class="condition_title"><h3><?php echo $condition->ConditionName; ?></h3></div>
 						<div class="condition_toggle">
-						  <input type="checkbox" name="<?php echo $condition->ConditionSlug; ?>" class="mobileToggle" id="<?php echo $condition->ConditionSlug; ?>" <?php if($condition->ConditionStatus) { echo 'checked';}?>>
-						  <label for="<?php echo $condition->ConditionSlug; ?>"></label>
+						  <input type="checkbox" name="id_<?php echo $condition->TypeID; ?>" class="mobileToggle" id="id_<?php echo $condition->TypeID; ?>" <?php if($condition->ConditionStatus == '1') echo 'checked'; ?>>
+						  <label for="id_<?php echo $condition->TypeID; ?>"></label>
 						</div>
 					</div>
 					<div class="condition_details">
-						<textarea name="detail_<?php echo $condition->ConditionSlug; ?>" placeholder="Additional details"></textarea>
+						<textarea name="detail_<?php echo $condition->TypeID; ?>" placeholder="Additional details"></textarea>
 					</div>
 				</div>
 

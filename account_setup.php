@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php 
+session_start();
+include("header.php");
+?>
 
 	
 		<div class="wrapper">
@@ -14,12 +17,30 @@
 				<p>Let's set up your account.</p>
 			</div>
 			<div class="content lr_25px">
-				<form action="staff_setup.php" class="form_account">
-					<input type="text" placeholder="Name" name="name">
-					<input type="email" placeholder="Email" name="email">
+				 <span id="error">
+				 <?php
+				 if (!empty($_SESSION['error'])) {
+					 echo $_SESSION['error'];
+					 unset($_SESSION['error']);
+				 }
+				 ?>
+				 </span>
+				<form action="staff_setup.php" class="form_account" method="post">
+					<input type="text" placeholder="Name" name="name" value="<?php
+				 if (!empty($_SESSION['name'])) {
+					 echo $_SESSION['name'];
+					 unset($_SESSION['name']);
+				 }
+				 ?>">
+					<input type="email" placeholder="Email" name="email" value="<?php
+				 if (!empty($_SESSION['email'])) {
+					 echo $_SESSION['email'];
+					 unset($_SESSION['email']);
+				 }
+				 ?>">
 					<hr class="invisible" />
-					<input type="password" placeholder="Password" name="password">
-					<input type="password" placeholder="Confirm Password" name="password_verify">
+					<input type="password" placeholder="Password" name="password" value="abc">
+					<input type="password" placeholder="Confirm Password" name="password_verify" value="abc">
 					<hr class="invisible" />
 					<button type="submit" class="a_left">Continue</button>
 				</form>

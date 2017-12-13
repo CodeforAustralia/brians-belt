@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+include('session_user.php');
+?>
 
 	
 		<div class="wrapper">
@@ -18,8 +21,8 @@
 						</div>
 					</div>
 				</div>
-				<h3>Jaydon Bates</h3>
-				<h4>jaydon.bates@gmail.com</h4>
+				<h3><?php echo $name; ?></h3>
+				<h4><?php echo $email; ?></h4>
 			</div>
 			<div class="content profile">
 				<h4>Profile</h4>
@@ -39,7 +42,7 @@
 				<hr class="invisible" />
 				<h4>Settings</h4>
 				<hr />
-				<a class="d_flex" href="index.php">
+				<a class="d_flex" href="logout.php">
 					<div class="icon_profile">
 						<img src="img/Unlock.svg" />
 					</div><h3>Log out</h3>

@@ -1,4 +1,11 @@
-<?php include("header.php"); ?>
+<?php 
+include("header.php");
+include('login_logic.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+	header("location: home.php");
+}
+?>
 
 	
 		<div class="wrapper">
@@ -14,6 +21,7 @@
 				<p>Type in your account details</p>
 			</div>
 			<div class="content lr_25px">
+				<span><?php echo $error; ?></span>
 				<?php include("login_form.php"); ?>
 				<div class="forgot">
 					<a href="order_start.php">New? Create an account first.</a><br />

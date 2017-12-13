@@ -1,6 +1,6 @@
-<form action="home.php" class="form_account">
+<form action="" class="form_account" method="post">
 	<input type="email" placeholder="Email" name="email">
 	<input type="password" placeholder="Password" name="password">
 	<hr class="invisible" />
-	<button type="submit" class="a_left">Login</button>
+	<input type="submit" name="submit" class="a_left" value="Login">
 </form>
