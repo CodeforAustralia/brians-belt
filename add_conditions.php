@@ -26,7 +26,7 @@ foreach ($_POST as $key => $value) {
 				<?php
 
 				$headers = array('Content-Type' => 'application/json', 'Authorization' => getAuthorization());
-				$response = Unirest\Request::get('http://ec2-54-66-246-123.ap-southeast-2.compute.amazonaws.com/brian/src/public/conditions', $headers);
+				$response = Unirest\Request::get(getAPIURL() . 'conditions', $headers);
 
 				foreach ($response->body as $condition) {
 				?>

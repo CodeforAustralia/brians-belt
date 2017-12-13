@@ -9,6 +9,7 @@
 
 html {
     box-sizing: border-box;
+  overflow-y: scroll;
 }
 *,
 *:before,
@@ -228,6 +229,13 @@ header {
 .btn_left {
     font-size: 50px;
 }
+.btn_back svg {
+    height: 35px;
+    width: auto;
+}
+a.btn_back:hover #btn_back {
+    fill: #132b4c;
+}
 .logo {
     width: 50%;
 
@@ -317,7 +325,7 @@ a.btn_back:hover, .btn_edit:hover {
     margin: 10px 0;
     padding: 25px;
 
-    color: #fff;
+    /*color: #fff;*/
     border: 0;
     border-radius: 15px;
     background-color: rgba(255,255,255,.3);
@@ -397,7 +405,7 @@ input:focus:-moz-placeholder {
     color: #132b4c;
 }
 
-.form_account button {
+.form_account button, input.submit {
     font-size: 1.125em;
     font-weight: bold;
 
@@ -413,7 +421,7 @@ input:focus:-moz-placeholder {
     border-radius: 15px;
     background-color: #fff;
 }
-.form_account button:hover {
+.form_account button:hover, input.submit:hover {
     color: #fff;
     background-color: #132b4c;
 }
@@ -436,6 +444,10 @@ input:focus:-moz-placeholder {
     padding: 25px;
 
     background-color: #fff;
+}
+.mandatory h3 {
+    padding: 25px 0;
+    text-align: center;
 }
 h3 {
     font-size: 1.75em;
@@ -752,7 +764,7 @@ header h4 {
     height: auto;
 }
 .profile h4 {
-    margin-bottom: 15px;
+    padding: 15px 0;
 }
 .profile .invisible {
     margin: 25px 0;
@@ -869,6 +881,10 @@ header h4 {
 .intro {
     color: #fff;
 }
+.intro.resources p {
+    font-size: 1em;
+    margin-top: 15px;
+}
 .video_wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -881,6 +897,14 @@ header h4 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+div.error {
+    background-color: orange;
+    padding: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+    height: initial;
 }
 .notice {
     background-color: orange;
@@ -895,6 +919,9 @@ header h4 {
 }
 .condition .intro {
     padding: 25px 25px 25px;
+}
+.content {
+    padding: 25px;
 }
 .condition .content {
     background-color: #fff;
@@ -934,6 +961,9 @@ header h4 {
     .icon {
         width: 150px;
         height: 150px;
+    }
+    header {
+        padding: 15px 0 0;
     }
 }
 @media (max-width: 400px) {

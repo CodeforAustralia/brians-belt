@@ -11,7 +11,12 @@ function return_account_setup($msg) {
 	header("location: staff_setup.php");
 }
 
-if (isset($_POST['supp_name'])){
+if (isset($_POST['support'])){
+	foreach ($_POST as $key => $value) {
+		$_SESSION['post'][$key] = $value;
+	}
+}
+else if (isset($_POST['supp_name'])){
 	if (empty($_POST['supp_name'])) {
 		return_account_setup('Please fill in a name, or choose "I\'m not sure".');
 	}

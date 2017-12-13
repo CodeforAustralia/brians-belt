@@ -19,8 +19,7 @@ require_once "authentication.php";
 			<meta name="msapplication-navbutton-color" content="#00a5ee">
 			<meta name="apple-mobile-web-app-status-bar-style" content="#00a5ee">
 			<meta name="apple-mobile-web-app-capable" content="yes">
-			<meta name="mobile-web-app-capable" content="yes">
-			<link href="favicon.ico" rel="shortcut icon" type="img/fav.ico">
+			<link href="img/favicon.ico" rel="shortcut icon" type="img/fav.ico">
 
 			<link href="css/style.css" rel="stylesheet" type="text/css">
 			<!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet"> -->

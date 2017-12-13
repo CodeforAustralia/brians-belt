@@ -1,4 +1,6 @@
 <?php include("header.php"); 
+session_start();
+if(session_destroy()) {}
 ?>
 
 		<div class="wrapper">
@@ -13,7 +15,7 @@
 			<div class="intro a_center">
 				<p>Is this your first time <br />using Orion?</p>
 			</div>
-			<div class="content lr_25px">
+			<div class="content">
 				<a href="order_start.php" class="btn_select d_block a_center">Yes. <br />Tell me more.</a>
 				<a href="login.php" class="btn_select d_block a_center">No. <br />I'd like to login.</a>
 			</div>

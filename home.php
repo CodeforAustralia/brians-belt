@@ -12,13 +12,13 @@ include('session_user.php');
 				<div class="btn_right table_cell v_middle"></div>
 			</header>
 
-			<div class="intro a_center">
+<!-- 			<div class="intro a_center">
 				<p>The best preparation for <br />
 				tomorrow is doing your <br />
 				best today.</p>
 				<sub>H. Jackson Brown, JR.</sub>
-			</div>
-			<div class="content lr_25px home a_center">
+			</div> -->
+			<div class="content home a_center">
 				<div class="clearfix">
 					<a href="profile.php">
 						<div class="icon c_orange d_flex"><img src="img/profile.svg" alt=""></div>

@@ -20,7 +20,7 @@ if (isset($_POST['name'])){
 		// After sanitization Validation is performed.
 		if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){ 
 
-			$uri = 'http://ec2-54-66-246-123.ap-southeast-2.compute.amazonaws.com/brian/src/public/user/' . $_POST['email'];
+			$uri = getAPIURL() . 'user/' . $_POST['email'];
 
 			$response = \Httpful\Request::get($uri)
 			->addHeader('Content-Type', 'application/json')
@@ -34,6 +34,9 @@ if (isset($_POST['name'])){
 			}
 
 			if (($_POST['password']) === ($_POST['password_verify'])) {
+
+				$_POST['password'] = password_hash($_POST['password'],PASSWORD_DEFAULT);
+
 				foreach ($_POST as $key => $value) {
 					$_SESSION['post'][$key] = $value;
 				}
@@ -63,16 +66,13 @@ if (isset($_POST['name'])){
 			<div class="intro a_center">
 				<p>Who is your case worker?</p>
 			</div>
-			<div class="content lr_25px">
-				 <span id="error">
+			<div class="content">
 				<?php
-				// To show error of page 2.
-				if (!empty($_SESSION['error_page2'])) {
-				 echo $_SESSION['error_page2'];
-				 unset($_SESSION['error_page2']);
-				}
-				?>
-				 </span>
+				 if (!empty($_SESSION['error_page2'])) {
+					 echo '<div class="error">' . $_SESSION['error_page2'] . '</div>';
+					 unset($_SESSION['error_page2']);
+				 }
+				 ?>
 				<form action="order_mandatory_terms.php" class="form_account" method="post">
 					<input type="text" placeholder="Name" name="supp_name" value="<?php
 				 if (!empty($_SESSION['supp_name'])) {
@@ -100,7 +100,7 @@ if (isset($_POST['name'])){
 				 ?>">
 					<hr class="invisible" />
 					<button type="submit" class="a_left">Continue</button>
-					<a href="order_mandatory_terms.php" class="btn_next a_left">I'm not sure</a>
+					<input type="submit" class="btn_next a_left" name="support" value="I'm not sure">
 				</form>
 			</div>
 		</div>

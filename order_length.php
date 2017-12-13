@@ -19,16 +19,13 @@ foreach ($_POST as $key => $value) {
 			<div class="intro a_center">
 				<p>How long is your order?</p>
 			</div>
-			<div class="content lr_25px order">
-				 <span id="error">
+			<div class="content order">
 				<?php
-				// To show error of page 2.
-				if (!empty($_SESSION['error_page4'])) {
-				 echo $_SESSION['error_page4'];
-				 unset($_SESSION['error_page4']);
-				}
-				?>
-				 </span>
+				 if (!empty($_SESSION['error_page4'])) {
+					 echo '<div class="error">' . $_SESSION['error_page4'] . '</div>';
+					 unset($_SESSION['error_page4']);
+				 }
+				 ?>
 				<form action="success_create.php" class="form_account" method="post">
 					<h4>Start Date</h4>
 					<div class="d_flex">
