@@ -59,7 +59,7 @@ if (isset($_POST['name'])) {
 		<div class="wrapper edit">
 			<header class="table logged_in">
 				
-				<a href="support_edit.php" class="btn_left btn_back table_cell v_middle">
+				<a href="support.php" class="btn_left btn_back table_cell v_middle">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="3 -1.999 7.4 12" xml:space="preserve">
 					<g id="Symbols">
 						<g transform="translate(-102.000000, -19.000000)">
@@ -81,7 +81,7 @@ if (isset($_POST['name'])) {
 					echo '<div class="error">' . $msg . '</div>';
 				} ?>
 				<form action="<?php echo $_SERVER["PHP_SELF"];?>" class="form_account" method="post">
-					<input type="text" placeholder="Name" name="name" value="<?php if(isset($supp_id)) echo $supp_id;?>">
+					<input type="text" placeholder="Name" name="name" value="<?php if(isset($supp_name)) echo $supp_name;?>">
 					<input type="text" placeholder="Phone" name="phone" value="<?php if(isset($supp_phone)) echo $supp_phone;?>">
 					<input type="email" placeholder="Email" name="email" value="<?php if(isset($supp_email)) echo $supp_email;?>">
 					<input type="text" placeholder="Location" name="location" value="<?php if(isset($supp_location)) echo $supp_location;?>">

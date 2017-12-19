@@ -1,4 +1,4 @@
-<h3>Community Corrections Order</h3>
+<h3 class="a_center">Community Corrections Order</h3>
 
 <div>
 	<p>Not commit a further offence</p>
@@ -22,7 +22,7 @@
 	<p>Obey all lawful instructions and directions from your Case Manager which may be written or verbal</p>
 </div>
 
-<h3>Parole Order</h3>
+<h3 class="a_center">Parole Order</h3>
 
 <div>
 	<p>You must not break any law </p>

@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 		<div class="wrapper">
 			<header class="table">
 				
-				<a href="javascript:history.go(-1)" class="btn_left btn_back table_cell v_middle">
+				<a href="login.php" class="btn_left btn_back table_cell v_middle">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="3 -1.999 7.4 12" xml:space="preserve">
 					<g id="Symbols">
 						<g transform="translate(-102.000000, -19.000000)">
@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
 			</header>
 
 			<div class="intro a_center">
-				<p>Type in your email</p>
+				<p>Forgot password?</p>
 			</div>
 			<div class="content">
 				<?php if(isset($msg)) {
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
 				<form action="<?php echo $_SERVER["PHP_SELF"];?>" class="form_account" method="post">
 					<input type="email" placeholder="Email" name="email">
 					<hr class="invisible" />
-					<input type="submit" class="a_left" value="Submit" name="submit">
+					<input type="submit" class="a_left submit" value="Submit" name="submit">
 				</form>
 			</div>
 		</div>

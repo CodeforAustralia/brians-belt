@@ -12,7 +12,7 @@
 
 			<div class="intro a_center">
 				<p>A new password has been emailed to you.</p>
-				<div class="forgot">
+				<div class="forgot a_center">
 					<a href="login.php">Return home</a>
 				</div>
 			</div>

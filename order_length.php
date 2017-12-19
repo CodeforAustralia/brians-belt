@@ -27,14 +27,14 @@ foreach ($_POST as $key => $value) {
 				 }
 				 ?>
 				<form action="success_create.php" class="form_account" method="post">
-					<h4>Start Date</h4>
+					<h4 class="a_center">Start Date</h4>
 					<div class="d_flex">
 						<input type="number" placeholder="DD" name="start_day" min="1" max="31">
 						<input type="number" placeholder="MM" name="start_month" min="1" max="12">
 						<input type="number" placeholder="YYYY" name="start_year" min="1990" max="2200">
 					</div>
 					<hr class="invisible" />
-					<h4>End Date</h4>
+					<h4 class="a_center">End Date</h4>
 					<div class="d_flex">
 						<input type="number" placeholder="DD" name="end_day" min="1" max="31">
 						<input type="number" placeholder="MM" name="end_month" min="1" max="12">

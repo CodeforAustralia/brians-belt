@@ -48,7 +48,6 @@ if (isset($_POST['start_day'])) {
 			}
 
 			// Iterate through the variables by re-assigning them
-			// http://php.net/manual/en/language.variables.variable.php
 			for($i = 1; $i < 21; $i++) {
 			  $id = 'id_' . $i;
 			  $detail = 'detail_' . $i;
@@ -113,7 +112,7 @@ else {
 			<div class="intro a_center">
 				<p>Your account was sucessfully created!<br /></p>
 			</div>
-			<div class="forgot">
+			<div class="forgot a_center">
 				<a href="login.php">Please login</a>
 			</div>
 		</div>

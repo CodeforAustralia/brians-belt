@@ -43,13 +43,10 @@ if (isset($_POST['submit'])) {
 	$response = Unirest\Request::post(getAPIURL() . 'client/' . $JAID . '/order/' . $order_ID, $headers, $body);
 
 	// Iterate through the variables by re-assigning them
-	// http://php.net/manual/en/language.variables.variable.php
 	for($i = 1; $i < 21; $i++) {
 
 		$id = $_POST['id_' . $i];
 		$detail = $_POST['detail_' . $i];
-	  
-	  // echo $i . " " . $$id . " " . $$detail . '<br />';
 
 	  if($id == 'on') 
 	  	$conditionStatus = 1;
@@ -99,7 +96,7 @@ if (isset($_POST['submit'])) {
 					echo '<div class="error">' . $msg . '</div>';
 				} ?>
 				<form action="<?php echo $_SERVER["PHP_SELF"];?>" class="form_account" method="post">
-					<div class="date">
+					<div class="date a_center">
 						<h4>Start Date</h4>
 						<div class="d_flex">
 							<input type="number" placeholder="DD" name="start_day" min="1" max="31" value="<?php if(isset($start_day)) echo $start_day;?>">
@@ -107,7 +104,7 @@ if (isset($_POST['submit'])) {
 							<input type="number" placeholder="YYYY" name="start_year" min="1990" max="2200" value="<?php if(isset($start_year)) echo $start_year;?>">
 						</div>
 						<hr class="invisible" />
-						<h4>End Date</h4>
+						<h4 class="a_center">End Date</h4>
 						<div class="d_flex">
 							<input type="number" placeholder="DD" name="end_day" min="1" max="31" value="<?php if(isset($end_day)) echo $end_day;?>">
 							<input type="number" placeholder="MM" name="end_month" min="1" max="12" value="<?php if(isset($end_month)) echo $end_month;?>">

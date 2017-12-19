@@ -47,7 +47,7 @@ foreach ($response->body as $support) {
 				<h4><?php echo $supp_email; ?></h4>
 			</div>
 			<div class="content support">
-				<div class="support_toolbar">
+				<div class="support_toolbar clearfix">
 					<?php if($supp_phone != 0){ ?>
 					<a href="tel:<?php echo $supp_phone; ?>"><img src="img/phone.svg" class="icon_support" /></a>
 					<?php } if($supp_email != NULL) { ?>

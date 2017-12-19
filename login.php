@@ -35,7 +35,7 @@ if(isset($_SESSION['login_user'])){
 				 }
 				 ?>
 				<?php include("login_form.php"); ?>
-				<div class="forgot">
+				<div class="forgot a_center">
 					<a href="order_start.php">New? Create an account first.</a><br />
 					<a href="forgot.php">Help! I forgot my password.</a>
 				</div>
